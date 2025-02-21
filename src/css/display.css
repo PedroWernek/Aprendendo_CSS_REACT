@@ -1,0 +1,104 @@
+.red {
+  resize: both;
+  overflow: hidden;
+}
+.green {
+  resize: both;
+  overflow: hidden;
+}
+.blue {
+  resize: both;
+  overflow: hidden;
+}
+
+.display {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  flex-direction: column;
+}
+.block {
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+  resize: both;
+  overflow: hidden;
+
+  .red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  .green {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  .blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+}
+
+.inline {
+  border: 1px solid black;
+  margin: 10px;
+  resize: both;
+  overflow: hidden;
+  .red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline;
+  }
+  .green {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    display: inline;
+  }
+  .blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: inline;
+  }
+}
+
+.inline-block {
+  border: 1px solid black;
+  margin: 10px;
+  resize: both;
+  overflow: hidden;
+  .red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  }
+  .green {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  }
+  .blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  }
+}
+
+.display__container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+  resize: both;
+  overflow: hidden;
+}
