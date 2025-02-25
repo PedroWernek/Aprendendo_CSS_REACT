@@ -1,9 +1,9 @@
-import CssInline from "../components/subpages/CssInline";
-import CssIntegrated from "../components/subpages/CssIntegrated";
+import CssInline from "../components/pages/CssInline";
+import CssIntegrated from "../components/pages/CssIntegrated";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamation } from "@fortawesome/free-solid-svg-icons";
-import Hierarquia from "../components/subpages/CssHierarchy";
-import Background from "../components/subpages/Background";
+import Hierarquia from "../components/pages/CssHierarchy";
+import Background from "../components/pages/Background";
 
 const CssBasico = () => {
   return (

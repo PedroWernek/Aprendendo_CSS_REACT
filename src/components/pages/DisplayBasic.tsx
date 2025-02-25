@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import "../../../css/display.css";
+import "../../css/display.css";
 
-const Display = () => {
+const DisplayBasic = () => {
   return (
     <div className="display">
       <div className="display__container">
@@ -32,4 +31,4 @@ const Display = () => {
   );
 };
 
-export default Display;
+export default DisplayBasic;

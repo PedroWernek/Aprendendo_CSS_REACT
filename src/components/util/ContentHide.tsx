@@ -22,6 +22,7 @@ const ContentHide: React.FC<ContentHideProps> = ({
   messageWhileVisible,
 }) => {
   const [visible, setVisible] = React.useState(false);
+
   return (
     <div>
       <button

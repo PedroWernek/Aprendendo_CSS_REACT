@@ -1,6 +1,6 @@
-import ContentHide from "../../components/util/ContentHide";
-import CssBasico from "../CssBasico";
-import Display from "../Display";
+import ContentHide from "../components/util/ContentHide";
+import CssBasico from "./CssBasico";
+import Display from "./Display";
 
 const Home = () => {
   return (
