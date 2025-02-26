@@ -1,18 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../../css/sidebar.css";
-import { Link, useLocation } from "react-router-dom";
-import path from "path";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSquareCaretDown,
-  faSquareCaretUp,
-} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import ShowContent from "../util/ShowContent";
 
 const SideBar = () => {
-  const [showContent, setShowContent] = React.useState(false);
-  const { pathname } = useLocation();
-
   return (
     <div className="sidebar">
       <h1 className="sidebar__content--title">
@@ -31,6 +22,15 @@ const SideBar = () => {
           mainLinkPath="/display"
           componentIds={["displayBasic", "displayFlex", "displayGrid"]}
         />
+        <Link className="sidebar__content--item" to="/position">
+          POSITION
+        </Link>
+        <Link className="sidebar__content--item" to="/overflow">
+          OVERFLOW
+        </Link>
+        <Link className="sidebar__content--item" to="/float">
+          FLOAT
+        </Link>
       </div>
     </div>
   );

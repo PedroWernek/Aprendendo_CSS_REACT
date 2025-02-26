@@ -96,11 +96,12 @@
   color: white;
   list-style-type: none;
 }
+
 .sidebar__content--hiden-item-bar:last-child {
   border-left: 1px solid white;
   color: white;
   list-style-type: none;
-  border-radius: 0 0 0 5px;
+  border-bottom-left-radius: 5px;
   border-bottom: 1px 1px solid white;
 }
 

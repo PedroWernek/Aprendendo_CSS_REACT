@@ -18,9 +18,13 @@ body {
 /*content division*/
 .App__sidebar {
   position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  scrollbar-width: none;
   padding: 10px;
   width: 260px;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(#282c34 75%, black);
 }
 
@@ -30,31 +34,7 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-}
-
-.content {
-  margin-left: 250px; /* Para compensar a sidebar fixa */
-  padding: 20px;
-  position: relative;
-}
-
-.aviso {
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 10px -5px black;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-  gap: 10px;
-}
-
-.aviso__text {
-  font-family: "Arial";
-  font-size: "15px";
-  text-align: "center";
+  width: 100%;
 }
 
 #background-exemple {
@@ -79,14 +59,20 @@ body {
 .aviso {
   text-align: center;
   position: relative;
-  display: "flex";
-  justify-content: "center";
-  align-items: "center";
-  box-shadow: "0px 0px 10px -5px black";
-  border-radius: "10px";
-  padding: "20px";
-  margin: "10px";
-  gap: "10px";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px -5px black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.aviso__text {
+  font-family: "Arial";
+  font-size: "15px";
+  text-align: "center";
 }
 
 .aviso__button {

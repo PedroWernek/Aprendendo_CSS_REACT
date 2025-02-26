@@ -11,12 +11,13 @@ import App from "./App";
 import ErrorPage from "./routes/ErrorPage";
 import Display from "./routes/Display";
 import Position from "./routes/Position";
+import OverFlow from "./routes/OverFlow";
+import Float from "./routes/Float";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -33,6 +34,18 @@ const router = createBrowserRouter([
       {
         path: "/position",
         element: <Position />,
+      },
+      {
+        path: "/overflow",
+        element: <OverFlow />,
+      },
+      {
+        path: "/float",
+        element: <Float />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },

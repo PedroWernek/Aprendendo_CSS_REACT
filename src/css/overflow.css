@@ -1,0 +1,26 @@
+.overflow {
+  border: 3px solid black;
+  margin: 10px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.overflow-hidden {
+  border: 1px solid black;
+  overflow: hidden;
+  background-color: rgb(165, 165, 165);
+  height: 100px;
+}
+.overflow-scroll {
+  border: 1px solid black;
+  overflow: scroll;
+  background-color: rgb(165, 165, 165);
+  height: 100px;
+}
+.overflow-visible {
+  border: 1px solid black;
+  overflow: visible;
+  background-color: rgb(165, 165, 165);
+  height: 100px;
+}

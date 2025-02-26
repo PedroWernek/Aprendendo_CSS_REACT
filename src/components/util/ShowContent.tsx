@@ -45,23 +45,23 @@ const ShowContent: React.FC<Props> = ({
           <FontAwesomeIcon icon={faSquareCaretDown} />
         )}
       </div>
-      {showContent && (
-        <nav>
-          <ul>
-            {componentNames.map((Component, index) => (
-              <>
-                <li className="sidebar__content--hiden-item-bar">
-                  <a
-                    href={`${mainLinkPath}#${componentIds[index]}`}
-                    className="sidebar__content--hiden-item-link">
-                    {Component}
-                  </a>
-                </li>
-              </>
-            ))}
-          </ul>
-        </nav>
-      )}
+      <nav>
+        <ul>
+          {componentNames.map((Component, index) => (
+            <li
+              className="sidebar__content--hiden-item-bar"
+              style={{
+                display: showContent ? "block" : "none",
+              }}>
+              <a
+                href={`${mainLinkPath}#${componentIds[index]}`}
+                className="sidebar__content--hiden-item-link">
+                {Component}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   );
 };
