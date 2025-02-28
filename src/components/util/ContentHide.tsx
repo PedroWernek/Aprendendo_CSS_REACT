@@ -3,6 +3,7 @@ import {
   faArrowAltCircleUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 
 // { disendo que o prop recebido é um componente
@@ -24,7 +25,7 @@ const ContentHide: React.FC<ContentHideProps> = ({
   const [visible, setVisible] = React.useState(false);
 
   return (
-    <div>
+    <div className="content_hide">
       <button
         className="aviso aviso__button"
         onClick={() => setVisible(!visible)}>
@@ -35,7 +36,18 @@ const ContentHide: React.FC<ContentHideProps> = ({
           <FontAwesomeIcon icon={faArrowAltCircleDown} />
         )}
       </button>
-      {visible && <Componente />}
+      <AnimatePresence>
+        {visible && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto", float: "left" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            style={{ overflow: "hidden" }}>
+            <Componente />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

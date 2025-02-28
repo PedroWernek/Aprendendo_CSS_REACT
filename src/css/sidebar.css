@@ -44,9 +44,12 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sidebar__content--button {
+.sidebar__content--button,
+.sidebar__content--dropdown__btn {
   background-color: #282c34;
   color: white;
   font-size: 20px;
@@ -66,7 +69,8 @@
   color: white;
 }
 
-.sidebar__content--item:hover {
+.sidebar__content--item:hover,
+.sidebar__content--dropdown__btn:hover {
   background-color: #555;
   transition: 0.5s;
   padding: 15px;

@@ -4,7 +4,7 @@ import Display from "./Display";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <ContentHide
         Componente={CssBasico}
         messageWhileHiden="Mostrar CSS básico"

@@ -13,6 +13,7 @@ import Display from "./routes/Display";
 import Position from "./routes/Position";
 import OverFlow from "./routes/OverFlow";
 import Float from "./routes/Float";
+import MediaQueries from "./routes/MediaQueries";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/float",
         element: <Float />,
+      },
+      {
+        path: "/media-queries",
+        element: <MediaQueries />,
       },
       {
         path: "*",
