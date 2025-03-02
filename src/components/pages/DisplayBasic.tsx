@@ -2,7 +2,8 @@ import "../../css/display.css";
 
 const DisplayBasic = () => {
   return (
-    <div className="display">
+    <div className="display-basic">
+      <h1>Display Block | Inline | Inline-Block</h1>
       <div className="display__container">
         <p>Tipo Block:</p>
         <div className="block">

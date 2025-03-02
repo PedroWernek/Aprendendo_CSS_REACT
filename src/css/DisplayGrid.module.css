@@ -1,0 +1,230 @@
+/*Display Grid*/
+.displayGrid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gridContainer {
+  width: 300px;
+  border: 1px solid black;
+  margin-bottom: 100px;
+}
+
+.gridItem {
+  background-color: rgb(149, 255, 0);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+h2.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/*é apenas possivel definir a quantidade de colunas*/
+.gridColumns {
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+}
+.gridTamplateRows {
+  display: grid;
+  grid-template-columns: repeat(10, 20px);
+  grid-template-rows: 200px 100px;
+}
+.gridArea {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  border: 3px dotted black;
+  margin-bottom: 100px;
+  grid-template-areas:
+    "header header header header"
+    "nav  nav aside select"
+    "section section section select"
+    "footer footer footer footer";
+  border-radius: 5px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.areaHeader {
+  grid-area: header;
+  background-color: rgb(255, 0, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.areaSelect {
+  grid-area: select;
+  background-color: rgb(0, 255, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.areaAside {
+  grid-area: aside;
+  background-color: rgb(0, 0, 255, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.areaSection {
+  grid-area: section;
+  background-color: rgb(255, 255, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.areaNav {
+  grid-area: nav;
+  background-color: rgb(255, 0, 255, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.areaA {
+  grid-area: a;
+  background-color: rgb(0, 255, 255, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.areaFooter {
+  grid-area: footer;
+  background-color: rgb(255, 196, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.gridColumn {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  border: 3px dotted black;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.columnHeader {
+  background-color: rgb(255, 0, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-column: span 4;
+}
+
+.columnSelect {
+  background-color: rgb(0, 255, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-column: 4;
+}
+
+.columnAside {
+  background-color: rgb(0, 0, 255, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-column: 1;
+}
+
+.columnSection {
+  background-color: rgb(255, 255, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-column: 2 /4;
+}
+
+.columnNav {
+  background-color: rgb(255, 0, 255, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-column: 1 /4;
+}
+
+.columnA {
+  background-color: rgb(0, 255, 255, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.columnFooter {
+  background-color: rgb(255, 196, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-column: span 4;
+}
+
+.gridRow {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  border: 3px dotted black;
+  margin-bottom: 100px;
+  grid-template-areas:
+    "header header header header"
+    "nav  nav aside select"
+    "section section section select"
+    "footer footer footer footer";
+  border-radius: 5px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.rowHeader {
+  background-color: rgb(255, 0, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-row: 5;
+}
+
+.rowSelect {
+  background-color: rgb(0, 255, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-row: 1;
+}
+
+.rowAside {
+  background-color: rgb(0, 0, 255, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-row: 6/9;
+}
+
+.rowSection {
+  background-color: rgb(255, 255, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-row: 2;
+}
+
+.rowNav {
+  background-color: rgb(255, 0, 255, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-row: 9;
+}
+
+.rowA {
+  background-color: rgb(0, 255, 255, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.rowFooter {
+  background-color: rgb(255, 196, 0, 0.7);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  grid-row: 3 /5;
+}

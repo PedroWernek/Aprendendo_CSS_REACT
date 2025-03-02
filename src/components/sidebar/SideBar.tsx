@@ -29,7 +29,7 @@ const SideBar = () => {
           </svg>
         </Link>
         <ShowContent
-          componentNames={["Basic", "Flex", "Grid"]}
+          componentNames={["Inline | Block | Inline-Block", "Flex", "Grid"]}
           mainLinkName="DISPLAY"
           mainLinkPath="/display"
           componentIds={["displayBasic", "displayFlex", "displayGrid"]}

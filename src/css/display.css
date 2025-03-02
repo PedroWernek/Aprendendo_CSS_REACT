@@ -13,9 +13,16 @@
 
 .display {
   display: flex;
-  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-basic {
+  display: flex;
+  margin: 50px;
   gap: 10px;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 .block {
   display: flex;
@@ -101,4 +108,74 @@
   border: 1px solid black;
   resize: both;
   overflow: hidden;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  gap: 10px;
+  width: 600px;
+}
+
+.flex-containers {
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  gap: 10px;
+  height: 200px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.flex-item {
+  background-color: white;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container--direction_column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 300px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.flex-container--direction_row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 100px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/*Display Grid*/
+.display-grid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gridContainer {
+  width: 300px;
+  border: 1px solid black;
+}
+
+.grid-item {
+  background-color: rgb(149, 255, 0);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
